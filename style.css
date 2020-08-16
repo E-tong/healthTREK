@@ -1,0 +1,418 @@
+/* Styles*/
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: #efffdb;
+  padding-left: 0px;
+  text-align: left;
+}
+h1 {
+  font-weight: bold;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 108px;
+  display: flex;
+  text-align: left;
+  padding-left: 25px;
+}
+h2 {
+  font-weight: bold;
+  margin-top: 1em;
+  font-size: 36px;
+  padding-left: 25px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+h3 {
+  font-weight: bold;
+  font-size: 75px;
+  padding-top: 36px;
+  padding-left: 25px;
+}
+h4 {
+  padding-left: 25px;
+  font-size: 36px;
+  font-weight: bold;
+}
+p {
+  font-weight: none;
+  font-size: 24px;
+  padding-left: 25px;
+  padding-bottom: 3px;
+}
+p1 {
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 25px;
+}
+p2 {
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+p3 {
+  font-style: italic;
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+/*Code for buttons*/
+.box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: auto;
+  background-color: #fafddd;
+  border: 3px solid #ddefdd;
+  padding: 25px;
+  margin: 15px;
+}
+.register {
+  float: right;
+  background-color: black;
+  transition-duration: 0.75s;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #37ee00;
+  cursor: pointer;
+  margin: 4px 2px;
+  padding: 12px 24px;
+  border-radius: 15px;
+}
+.register:hover {
+  background-color: #00e65b;
+  color: white;
+}
+#login {
+  background-color: white;
+  color: black;
+}
+#login:hover {
+  background-color: #69ff00;
+  color: black;
+}
+#logowelc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+.pass {
+background-color: #4b7a4e;
+}
+#calendar {
+  display: block;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.cal {
+  float: left;
+  width: auto;
+  height: 150px;
+}
+.caltext {
+  display: flex;
+  float: right;
+}
+.ga {
+  float: right;
+  width: auto;
+  height: 150px;
+}
+.gatext {
+  float: left;
+}
+
+.infotaking {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Notes and Questions formating */
+/* please do not touch, alter, or delete without asking-Rina */
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background: #ECECEC;
+  width: 300px;
+  margin: 25px auto 5px auto;
+  padding: 5px;
+  font-size: 90%;
+}
+
+.btn {
+  width: 300px;
+  padding: 5px;
+  margin: 5px auto 25px auto;
+  background: black;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 100%;
+}
+
+.container {
+  padding: 30px;
+  background: #D3A2DA;
+}
+
+.input-card {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 300px;
+  background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 10px auto;
+  width: 400px;
+}
+
+/* Nav bar */
+#spacer {
+  vertical-align: top;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0px 0px;
+  justify-content: left;
+}
+body {
+  margin: 0;
+}
+.try {
+  text-align: center;
+  padding: 36px 48px;
+}
+.topnav {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #445446;
+  color: white;
+  font-size: 24px;
+}
+.topnav li {
+  float: left;
+  border-right: 2px solid white;
+}
+.topnav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px;
+}
+.topnav li a:hover {
+  background-color: #007826;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav li {
+    float: none;
+  }
+}
+/* Mood commands and grid stuff */
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding-left: 25px;
+}
+.grid-item {
+  border: 2px solid black;
+  padding: 0px;
+  align-content: center;
+}
+.mood {
+  background-color: #effdbb;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  border: 3px solid #04cf30;
+  cursor: pointer;
+  margin: 4px 2px;
+  padding: 12px 24px;
+}
+.mood:hover {
+  background-color: #00853e;
+  color: white;
+}
+.mood:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Calendar CSS*/
+#calendar {
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.newpad {
+  padding-left: 25px;
+}
+.addnew {
+  background-color: #528756;
+  color: #223284;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.addnew:hover {
+  background-color: #2d4a2f;
+  color: white;
+}
+#appoint {
+  height: 250px;
+  width: auto;
+}
+#appoint1 {
+  height: 250px;
+  width: auto;
+}
+#appoint2 {
+  height: 150px;
+  width: auto;
+}
+#appoint3 {
+  height: 150px;
+  width: auto;
+}
+.lastcal {
+  padding-bottom: 35px;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: white;
+}
+
+.edithow {
+  float: left;
+}
+.edithowpic {
+  float: right;
+  height: 250px;
+  width: auto;
+  padding-bottom: 35px;
+  padding-right: 250px;
+}
+
+/* notes and questions page */
+.nq {
+  color: black;
+}
+
+.container {
+  background-color: #f8edeb;
+}
+
+.moods {
+  text-align: center;
+}
+
+.imgsLeft {
+  display: block;
+  margin-left: 0%;
+  margin-right: auto;
+  width: 15%;
+  padding-left: 25px;
+}
+
+.imgsRight {
+  display: block;
+  margin-left: auto;
+  margin-right: 2%;
+  width: 15%;
+  padding-left: 25px;
+}
+
+.meetUs{
+  text-align: center;
+}
+
+.registerAccount {
+  float: center;
+  background-color: white;
+  transition-duration: 0.75s;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  border: 2px solid #37ee00;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 450px;
+  margin-right: 450px;
+  border-radius: 15px;
+}
+.registerAccount:hover {
+  background-color: #deeed0;
+  color: black;
+}
+
+.accounthead {
+  text-align: center;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 50px;
+}
+
+.list{
+  margin-left: 50px;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column-reverse; 
+  justify-content: space-between;
+}
+
+.intro {
+  text-align: right;
+  margin-right: 27px;
+}
+
+#link {
+  color: black;
+}
+
+#aboutElise {
+  margin-bottom: 50px;
+}
+
+#goals {
+   text-align: center;
+}
+
+#nqq{
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>healthTREK - Registration</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="/moodcode.js" defer></script>
+    <style>.createAccount1 {
+  background-color: gray;
+}</style>
+  </head>
+  
+<body>
+  <h3> Make an Account!</h3>
+
+<div class = "registerAccount">
+  <p1 class="accounthead"> Free Account:</p1>
+     <form>
+        <label> Name: </label><br>
+        <input class = "enter" type="text" id = "reguser"><br>
+        <label> Email: </label><br>
+        <input class = "enter" type="email" id = "regemail"><br>
+        <label> Password: 
+          <input name="password" id="regpass" type="password" onkeyup="check();"/>
+       </label><br>
+        <label> Re-enter password: <input type="password" name="confirm_password" id="confirm_password"  onkeyup="check();" /> <br>
+          <span id="message"></span>
+         </label><br>
+        <button class = "createAccount1" onclick="regAcc();"><a href = "home.html">Submit</a></button>
+      </form>
+      <section class = "thanks1">
+        
+      </section>
+  
+    <p2 class= "accounthead"> Premium Account: </p2>
+      <form>
+        <label> Birthdate: </label>
+        <input type="date"><br>
+        <label> healthcare provider: </label> <br>
+        <label> Yes: </label>
+        <input type="radio">
+        <label> No:</label> 
+        <input type="radio"><br>
+        <label> If yes, medical record number: </label>
+        <input type="number"><br>
+        <button class = "createAccount2">Submit</button>
+      </form>
+      <section class = "thanks2">
+        
+      </section>  
+  </div>
+</body>
+</html>

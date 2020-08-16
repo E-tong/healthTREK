@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>healthTREK - Goals & Achievements</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <style>
+      #setupAchievements {
+        float: right;
+      }
+
+      .boxg {
+        float: left;
+        width: 500px;
+        height: auto;
+        background-color: #fafddd;
+        border: 3px solid #ddefdd;
+        padding: 25px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <div>
+    <nav>
+      <ul class="topnav">
+        <li>
+          <a href="home.html"
+            ><img
+              id="spacer"
+              src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2FLogo.png?v=1597531644341"
+          /></a>
+        </li>
+        <li class="try"><a href="calendar.html"> Calendar</a></li>
+        <li class="try"><a href="goals.html"> Goals & Achievements</a></li>
+        <li class="try"><a href="notes&q.html">Notes & Questions</a></li>
+        <li class="try"><a href="activities.html">Activities</a></li>
+        <li class="try"><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <body>
+      <h2 id="goal" class="subTitle">
+        <img
+          src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2Fmedal.png?v=1597554786228"
+          width="50px"
+          height="50px"
+        />
+        Goals and Achievements!
+        <img
+          src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2Fmedal.png?v=1597554786228"
+          width="50px"
+          height="50px"
+        />
+      </h2>
+
+      <div class="boxg" id="setupGoals">
+        <p1>
+        🎯 #GOALS 🎯
+        </p1>
+        <br/>
+        <p>
+          What do I want to accomplish along my way to recovery?
+        </p>
+        <br />
+        <p>
+          Is there anything I want to do after I recover?
+        </p>
+        <br />
+        <p>What do I want (or need) to achieve to get to where I want to be?</p>
+      </div>
+      <div class="boxg" id="setupAchievements">
+        <p1>
+          🏆 #ACHIEVEMENTS 🏆
+        </p1>
+        <br/>
+        <p>
+          What have I achieved along my way to recovery?
+        </p>
+        <br />
+        <p>
+          What are some milestones that I've passed that were important in my
+          road to recovery?
+        </p>
+        <br />
+        <p>
+          Are there times when I did something I never thought I would be able
+          to do?
+        </p>
+      </div>
+      <div class="infotaking">
+        <article class="notesList">
+          <form class="inputNotes">
+            <input id="notes" class="input" type="text" placeholder="Enter goals here" />
+            <input
+              id="submitNotes"
+              class="btn"
+              type="submit"
+              value="Add a goal"
+            />
+          </form>
+          <section id="notesContainer" class="container"></section>
+        </article>
+
+        <article class="questionsList">
+          <form class="inputQuestions">
+            <input
+              id="q"
+              class="input"
+              type="text"
+              placeholder="Enter achievements here"
+            />
+            <input
+              id="submitQ"
+              class="btn"
+              type="submit"
+              value="Add an achievement"
+            />
+          </form>
+          <section id="qContainer" class="container"></section>
+        </article>
+      </div>
+    </body>
+  </div>
+</html>
