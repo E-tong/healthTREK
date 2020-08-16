@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>healthTREK - Notes & Questions</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <style>
+      #setupQuestions {
+        float: right;
+      }
+
+      .boxn {
+        float: left;
+        width: 500px;
+        height: auto;
+        background-color: #fafddd;
+        border: 3px solid #ddefdd;
+        padding: 25px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <div>
+    <nav>
+      <ul class="topnav">
+        <li>
+          <a href="home.html"
+            ><img
+              id="spacer"
+              src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2FLogo.png?v=1597531644341"
+          /></a>
+        </li>
+        <li class="try"><a href="calendar.html"> Calendar</a></li>
+        <li class="try"><a href="goals.html"> Goals & Achievements</a></li>
+        <li class="try"><a href="notes&q.html">Notes & Questions</a></li>
+        <li class="try"><a href="activities.html">Activities</a></li>
+        <li class="try"><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <body class="nq">
+    <h2 id = "nqq" class= "subTitle"> <img src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2Fnotepad.png?v=1597554918894"width="50px" height="50px"/> 
+      Notes and Questions! <img src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2Fquestion.png?v=1597554919751" width="50px" height="50px"/></h2>
+
+   <div class="boxn" id="setupNotes">
+        <p1>
+        📝 NOTES 📝
+        </p1>
+        <br/>
+        <p3>
+          (Templates)
+        </p3>
+        <br />
+        <p>
+          Dr. [My Doctor's Name] said to do this...
+        </p>
+        <br />
+        <p>Dr. [My Other Doctor's Name] said to do that...</p>
+     <br>
+     <p>
+       Dr. [So-and-so] prescribed this medication... I need to pick it up at...
+     </p>
+      </div>
+      <div class="boxn" id="setupQuestions">
+        <p1>
+          ❓ QUESTIONS ❓
+        </p1>
+        <br/>
+        <p3>(Templates)</p3>
+        <p>
+          To Dr. [My Doctor's Name]: Should I take this medication? Or that one?
+        </p>
+        <br />
+        <p>
+          To Dr. [My Other Doctor's Name]: Do you think that doing this is good for my ailment?
+        </p>
+        <br />
+        <p>
+          To Dr. [So-and-so]: Dr. [Something] said that I should ask you about this... Should I use this, or that?
+        </p>
+      </div>
+    
+    <div class="infotaking">
+      <article class="notesList">
+        <form class="inputNotes">
+          <input
+            id="notes"
+            class="input"
+            type="text"
+            placeholder="What do you need to remember?"
+          />
+          <input
+            id="submitNotes"
+            class="btn"
+            type="submit"
+            value="Add a section"
+          />
+        </form>
+        <section id="notesContainer" class="container"></section>
+      </article>
+
+      <article class="questionsList">
+        <form class="inputQuestions">
+          <input
+            id="q"
+            class="input"
+            type="text"
+            placeholder="Ask your doctor later!"
+          />
+          <input
+            id="submitQ"
+            class="btn"
+            type="submit"
+            value="Add a question"
+          />
+        </form>
+        <section id="qContainer" class="container"></section>
+      </article>
+    </div>
+  </body>
+</html>

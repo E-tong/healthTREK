@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to healthTREK!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel = "stylesheet" href = "login.css"/>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <button class="register" id="register" ><a href = "register.html">REGISTER</a>
+    </button>
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <script src="/moodcode.js" defer></script>
+      </head>
+      <body>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          style="width:auto;"
+          class="register"
+          id="login"
+        >
+          LOGIN
+        </button>
+
+        <div id="id01" class="modal">
+          <form
+            class="modal-content animate"
+            action="http://the-project-thing.glitch.me/home.html"
+            method="get"
+          >
+            <div class="imgcontainer">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+              <img
+                src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2FLogin%20profile.png?v=1597440927421"
+                alt="Avatar"
+                class="avatar"
+              />
+            </div>
+
+            <div class="container">
+              <label for="email"><b>Email Address</b></label>
+              <input
+                type="text"
+                placeholder="Enter Email Address"
+                name="email"
+                     id = "eml"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                     id = "psw"
+                required
+              />
+
+              <button
+                id="loginButton"
+                onclick="checkLogin();"
+              >
+                Login
+              </button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <span class="psw"><a href="pass.html">Forgot password?</a></span>
+            </div>
+          </form>
+        </div>
+
+        <script>
+          var modal = document.getElementById("id01");
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        </script>
+      </body>
+    </html>
+
+    <div class="txt">
+      <div class="box">
+        <img id = "logowelc" src = "https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2FLogo.png?v=1597531644341">
+        <h1>healthTREK</h1>
+        <p>
+          Welcome to healthTREK!
+        </p>
+        <p>
+          Here, you can keep track of your goals, health recommendations,
+          appointments, and more!
+        </p>
+      </div>
+      <br />
+      <br />
+      <div class="box">
+        <img
+          src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2Fcalendar%20(2).png?v=1597582873259"
+          class="cal"
+        />
+        <p class="caltxt">
+          Keeping track of your appointments is now easier than ever! You can
+          enter your date and time of the appointments right into healthTREK's
+          organized calendar!
+        </p>
+      </div>
+      <br />
+      <div class="box">
+        <img
+          src=" https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2FQUESTION.svg?v=1597499589823"
+          class="ga"
+        />
+        <p class="notestxt">
+          Have questions for doctors, but forget them right befeore the
+          appointment? Are you confused with the medical terms doctors use? You
+          can use healthTREK's Notes & Questions feature to keep track!
+        </p>
+      </div>
+      <br />
+      <div class="box">
+        <img
+          src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2FTarget.png?v=1597573251840"
+          class="cal"
+        />
+        <p class="gatxt">
+          Keep track of your goals and achievements! With healthTREK, you can
+          note your healthcare milestones, goals, and all that you have
+          achieved!
+        </p>
+      </div>
+      <br />
+      <div class="box">
+        <img
+          src="https://cdn.glitch.com/412dd6bc-332a-4b75-99c7-f533a89ac811%2Fmods.svg?v=1597499838679"
+          class="ga"
+        />
+        <p class="notestxt">
+          Not sure how to express your feelings to others? Choose how you feel
+          using healthTREK's Mood feature to keep track of how you're doing!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
